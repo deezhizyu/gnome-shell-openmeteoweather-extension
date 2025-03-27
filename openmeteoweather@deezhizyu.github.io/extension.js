@@ -133,7 +133,7 @@ class CustomWeatherClient extends Signals.EventEmitter {
   }
 }
 
-export default class OpenWeatherExtension extends Extension {
+export default class OpenMeteoWeatherExtension extends Extension {
   constructor(metadata) {
     super(metadata);
 
@@ -195,11 +195,11 @@ export default class OpenWeatherExtension extends Extension {
   }
 
   _addIndicator() {
-    const currentIndicator = statusArea["OpenWeather"];
+    const currentIndicator = statusArea["OpenMeteoWeather"];
     const currentSpacer = statusArea["Spacer"];
 
     if (currentIndicator) {
-      statusArea["OpenWeather"] = null;
+      statusArea["OpenMeteoWeather"] = null;
     }
 
     if (currentSpacer) {
@@ -212,7 +212,7 @@ export default class OpenWeatherExtension extends Extension {
     switch (this._position) {
       case 0:
         Main.panel._addToPanelBox(
-          "OpenWeather",
+          "OpenMeteoWeather",
           _indicator,
           -1,
           Main.panel._leftBox,
@@ -220,7 +220,7 @@ export default class OpenWeatherExtension extends Extension {
         break;
       case 1:
         Main.panel._addToPanelBox(
-          "OpenWeather",
+          "OpenMeteoWeather",
           _indicator,
           0,
           Main.panel._centerBox,
@@ -230,7 +230,7 @@ export default class OpenWeatherExtension extends Extension {
         break;
       case 2:
         Main.panel._addToPanelBox(
-          "OpenWeather",
+          "OpenMeteoWeather",
           _indicator,
           0,
           Main.panel._centerBox,
@@ -238,7 +238,7 @@ export default class OpenWeatherExtension extends Extension {
         break;
       case 3:
         Main.panel._addToPanelBox(
-          "OpenWeather",
+          "OpenMeteoWeather",
           _indicator,
           -1,
           Main.panel._centerBox,
@@ -246,7 +246,7 @@ export default class OpenWeatherExtension extends Extension {
         break;
       case 4:
         Main.panel._addToPanelBox(
-          "OpenWeather",
+          "OpenMeteoWeather",
           _indicator,
           -1,
           Main.panel._centerBox,
@@ -256,7 +256,7 @@ export default class OpenWeatherExtension extends Extension {
         break;
       case 5:
         Main.panel._addToPanelBox(
-          "OpenWeather",
+          "OpenMeteoWeather",
           _indicator,
           1,
           Main.panel._rightBox,

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <schemalist>
-    <enum id="org.gnome.shell.extensions.openweather.position-setting">
+    <enum id="org.gnome.shell.extensions.openmeteoweather.position-setting">
         <value value="0" nick="left" />
         <value value="1" nick="clock-left" />
         <value value="2" nick="clock-left-centered" />
@@ -9,18 +9,18 @@
         <value value="5" nick="right" />
     </enum>
 
-    <enum id="org.gnome.shell.extensions.openweather.unit-setting">
+    <enum id="org.gnome.shell.extensions.openmeteoweather.unit-setting">
         <value value="0" nick="celsius" />
         <value value="1" nick="fahrenheit" />
     </enum>
 
     <schema
-        path="/org/gnome/shell/extensions/openweather/"
-        id="org.gnome.shell.extensions.openweather"
+        path="/org/gnome/shell/extensions/openmeteoweather/"
+        id="org.gnome.shell.extensions.openmeteoweather"
     >
         <key
             name="position"
-            enum="org.gnome.shell.extensions.openweather.position-setting"
+            enum="org.gnome.shell.extensions.openmeteoweather.position-setting"
         >
             <default>"clock-right"</default>
             <summary>Indicator position</summary>
@@ -30,7 +30,7 @@
 
         <key
             name="unit"
-            enum="org.gnome.shell.extensions.openweather.unit-setting"
+            enum="org.gnome.shell.extensions.openmeteoweather.unit-setting"
         >
             <default>"celsius"</default>
             <summary>Temperature unit</summary>

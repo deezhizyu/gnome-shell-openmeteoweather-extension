@@ -12,7 +12,7 @@ ______
 ![screenshot](https://github.com/somepaulo/GNOME-Shell-extension-Weather-or-Not/assets/15643750/f936179b-3f69-4c77-b4a1-1b3cc6c3b133)
 
 ## Installation
-[<img src="https://user-images.githubusercontent.com/15643750/212080370-77899e64-bae8-43f1-b67a-fc946785c4b3.png" height="100">](https://extensions.gnome.org/extension/7996/openmeteoweather/)
+[<img src="https://user-images.githubusercontent.com/15643750/212080370-77899e64-bae8-43f1-b67a-fc946785c4b3.png" height="100">](https://extensions.gnome.org/extension/8010/openmeteoweather/)
 
 Alternatively, use the [Extension Manager](https://github.com/mjakeman/extension-manager) app.
 

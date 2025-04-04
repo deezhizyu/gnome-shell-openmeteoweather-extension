@@ -131,6 +131,10 @@ class CustomWeatherClient extends Signals.EventEmitter {
   get_symbolic_icon_name() {
     return weatherCodeToSymbolicIconName(this._weatherCode, this._isDay);
   }
+
+  cleanup() {
+    this._soupSession.abort();
+  }
 }
 
 export default class OpenMeteoWeatherExtension extends Extension {
@@ -401,6 +405,7 @@ const WeatherIndicator = GObject.registerClass(
       this._cancelLongTermUpdateTimeout();
       this._signals.forEach((signal) => signal.obj.disconnect(signal.signalId));
       this._signals = null;
+      this._weather.cleanup();
       this._weather = null;
       this._networkIcon = null;
     }
